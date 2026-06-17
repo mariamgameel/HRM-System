@@ -7,7 +7,7 @@ const upload = require("../middlewares/uploadMiddleware");
 
 
 router.get("/", auth, authorizeRoles("hr"), userController.getAllUsers);
-router.get("/:id", auth, authorizeRoles("hr"), userController.getUserById);
+router.get("/:id", auth, userController.getUserById);
 router.put("/:id", auth, authorizeRoles("hr"), userController.updateUser);
 router.delete("/:id", auth, authorizeRoles("hr"), userController.deleteUser);
 router.post(

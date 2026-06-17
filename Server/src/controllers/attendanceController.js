@@ -2,7 +2,7 @@ const Attendance = require("../models/Attendance.model");
 const User = require("../models/User.model");
 const {
     manualAttendanceSchema,
-    updateAttendance,
+    updateAttendanceSchema,
 } = require("../validators/attendanceValidator");
 
 
